@@ -1,0 +1,14 @@
+Functional Requirements
+1)	Manage participants - The user is able to add multiple participants and see list of those added:
+a)	User can click "add participant":
+i)	User must enter a participants' name
+li) User may optionally enter the description of the drink requested ("drink") for that participant
+iii)	User must click "Save"
+iv)	User can see participant name and drink in list
+b)	User can add another participant
+c)	User can remove participants that have been added to the list
+I) User can click "delete" next to the name of the participant
+ii)	Participant is removed from the list
+2)	Pick tea maker - The user is able to initiate the random picker.
+a)	If there are at least two participants in the list User can initiate random picker and tool then picks name from list and displays "[Name] is the winner", as well the list of the drinks to be made.
+b)	If fewer than 2 participants User is displayed the message "Not enough participants, add some more", and the user can add more participants
