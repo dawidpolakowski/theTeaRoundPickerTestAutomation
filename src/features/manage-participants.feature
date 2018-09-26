@@ -34,9 +34,10 @@ Feature: Manage participants
     And drink to the description of the drink requested 
     Then  user see participant name and drink on the list
     
-  Scenario: Remove participants
+  Scenario: Remove participant
 
     Given user is on the homepage
-    When 
-    Then 
+    And see list with at least one participant
+    When user click "delete" next to the name of the participant
+    Then chosen participant is removed from the list
     
