@@ -10,8 +10,8 @@ Feature: Manage participants
 
     Given user is on the homepage with no participants in list
     When user enters a participants name
-    And  user add <drink> to the description of the drink requested 
-    Then user see participant name and <drink> in list
+    And  add <drink> to the description of the drink requested 
+    Then user see participant name and <drink> on the list
 
  Examples:
       | drink                            |
@@ -25,9 +25,14 @@ Feature: Manage participants
 
   Scenario: Add another participants
 
+# In this scenario, drinks will be randomly picked 
+# in test backend
+
     Given user is on the homepage
-    When 
-    Then 
+    And see list with at least one participant
+    When user enters a participants name
+    And drink to the description of the drink requested 
+    Then  user see participant name and drink on the list
     
   Scenario: Remove participants
 
