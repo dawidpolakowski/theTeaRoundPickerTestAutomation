@@ -7,7 +7,8 @@ Feature: Pick a winner tea maker
   Scenario: Draw a winner from the list of fewer than two participants
 
     Given the user is on the draw a winner page
-    And sees less than two participants    When the user initiates the random pick
+    And sees less than two participants    
+    When the user initiates the random pick
     Then the user sees a message "Not enough participants, add some more"
     And user can add a new participant to list
     
