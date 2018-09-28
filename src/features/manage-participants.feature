@@ -23,7 +23,7 @@ Feature: Manage participants
       | Echinacea Tea                    |
       | Chamomile Tea                    |
 
-  Scenario: Add another participants
+  Scenario: Add another participant
 
 # In this scenario, drinks will be randomly picked 
 
