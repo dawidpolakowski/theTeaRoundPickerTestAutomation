@@ -1,7 +1,8 @@
 @notImplemented @assignee:Dawid.Polakowski @winnerPicker
-Feature: Pick a winner
+Feature: Pick a winner tea maker
 
   The user is able to initiate the random pick of the tea maker.
+  After succesfull draw user see a winner and a list of the drinks.
   
   Scenario: Draw a winner from the list of lest than two participants
 

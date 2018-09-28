@@ -1,17 +1,17 @@
 @notImplemented @assignee:Dawid.Polakowski @participantsView
 Feature: Manage participants
+  
+  In this feature, we are testing participants list management.
+  The user is on app first view with a list of participants.
 
-  First of all user is on the homepage from where is 
-  a view of list of participants.
-  The user is able to add multiple participants
-  and see list of those added.
 
-  Scenario Outline: Add first participant
+  Scenario Outline: Add the first participant
 
-    Given user is on the homepage with no participants in list
+    Given user is on the homepage with no participants in the list
     When user enters a participants name
-    And  add <drink> to the description of the drink requested 
-    Then user see participant name and <drink> on the list
+    And  add <drink> to users description of the drink requested 
+    Then user see added participant name on the list
+    And <drink> on users description of the drink requested
 
  Examples:
       | drink                            |
@@ -26,13 +26,13 @@ Feature: Manage participants
   Scenario: Add another participants
 
 # In this scenario, drinks will be randomly picked 
-# in test backend
 
     Given user is on the homepage
     And see list with at least one participant
     When user enters a participants name
     And drink to the description of the drink requested 
-    Then  user see participant name and drink on the list
+    Then  user see participant name on the list
+    And drink on users description of the drink requested
     
   Scenario: Remove participant
 
